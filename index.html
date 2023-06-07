@@ -10,11 +10,11 @@
   </head>
   <body x-data="{ iframeshow: false }" class="bg-slate-400">
     <div class="fixed top-0 left-0">
-      <button class="p-7 bg-slate-800 text-slate-400 text-3xl" @click="iframeshow=!iframeshow">Toggle Game</button>
-      <button class="p-7 rounded-bl-xl bg-slate-800 text-slate-400 text-3xl" @click="alert('[A] to move left, [D] to move right, [SPACE] to jump, [X] to shoot (only in boss fight)')">Instructions</button>
+      <button class="p-7 bg-slate-800 rounded-br-xl text-slate-400 text-3xl" @click="iframeshow=!iframeshow">Toggle Game</button>
+      <button class="p-7 rounded-br-3xl rounded-bl-xl bg-slate-800 text-slate-400 text-3xl" @click="alert('[A] to move left, [D] to move right, [SPACE] to jump, [X] to shoot (only in boss fight)')">Instructions</button>
     </div>
-    <div class="place-items-center w-full h-full">
-      <iframe src="https://forkphorus.github.io/embed.html?id=857458016&auto-start=true&light-content=false" class="w-[482px] h-[393px] rounded-xl" x-show="iframeshow"></iframe>
+    <div class="bottom-0 left-0">
+      <iframe src="https://forkphorus.github.io/embed.html?id=857458016&auto-start=true&light-content=false" class="w-[482px] h-[393px] rounded-t-3xl rounded-br-3xl" x-show="iframeshow"></iframe>
     </div>
   </body>
 </html>
